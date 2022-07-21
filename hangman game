@@ -1,0 +1,210 @@
+n=input("enter the level easy,medium or hard ")
+if n=="easy":
+    word="box"
+    target="_ox"
+    b=False
+    i=3
+    while i > 0:
+        print(i,"attempt left ")
+
+        print(target)
+        d=input("enter the letter ")
+        if d=='b':
+            b=True
+            
+        else:
+            i=i-1
+        
+        if b:
+            print("box")
+            print("you won")
+            break
+    else:
+        print("you lost")
+        print('''========
+ +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''')
+
+
+if n=="medium":
+    word="python"
+    target="p_th__"
+    y=False
+    o=False
+    n=False
+    i=5
+    print(target)
+    while i > 0:
+        print(i,"attempt left ")
+        d=input("enter the letter ")
+        if d=='y':
+            y=True
+        elif d=='o':
+            o=True
+        elif d=='n':
+            n=True
+        else:
+            i=i-1
+        
+        if y and o and n :
+            print("python")
+            print("you won")
+            break
+        elif y and o:
+            print("pytho_")
+            print("enter the next letter")
+        elif n and o:
+            print("p_thon")
+            print("enter the next letter")
+        elif y and n:
+            print("pyth_n")
+            print("enter the next letter")
+        elif y:
+            print("pyth__")
+        elif o:
+            print("p_tho_")
+        elif n:
+            print("p_th_n")
+    else:
+        print("you lost")
+        print('''========
+ +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''')
+
+if n=="hard":
+    word="programming"
+    target="p_ogr__mi__"
+    r=False
+    m=False
+    a=False
+    n=False
+    g=False
+    i=7
+    print(target)
+    while i > 0:
+        print(i,"attempt left ")
+        d=input("enter the letter ")
+        if d=='r':
+            r=True
+        elif d=='m':
+            m=True
+        elif d=='a':
+            a=True
+        elif d=='n':
+            n=True
+        elif d=='g':
+            g=True
+        else:
+            i=i-1
+        
+        if r and m and n and a and g  :
+            print("programming")
+            print("you won")
+            break
+        elif r and m and n and a:
+            print("programmin_")
+            print("enter the next letter")
+        elif r and m and n and g:
+            print("progr_mming")
+            print("enter the next letter")
+        elif g and m and n and a:
+            print("p_ogramming")
+            print("enter the next letter")
+        elif r and a and n and g:
+            print("progra_ming")
+            print("enter the next letter")
+        elif g and m and r and a:
+            print("programmi_g")
+            print("enter the next letter")
+            
+        elif r and a and m:
+            print("programmi__")
+        elif r and m and n:
+            print("progr_mmin_")
+        elif r and n and g:
+            print("progr__ming")
+        elif r and a and n:
+            print("progra_min_")
+        elif a and r and g:
+            print("progra_mi_g")
+
+        elif a and n and g:
+            print("p_ogra_ming")
+        elif a and m and g:
+            print("p_ogrammi_g")
+        elif a and m and n:
+            print("p_ogrammin_")
+
+        elif m and n and g:
+            print("p_ogramming")
+
+        elif r and a:
+            print("progra_mi__")
+            print("enter the next letter")
+        elif r and m:
+            print("progr_mmi__")
+            print("enter the next letter")
+        elif r and n:
+            print("progr__min_")
+            print("enter the next letter")
+        elif r and g:
+            print("progr__mi_g")
+            print("enter the next letter")
+        elif a and m:
+            print("p_ogrammi__")
+            print("enter the next letter")
+        elif a and n:
+            print("p_ogra_min_")
+            print("enter the next letter")
+        elif a and g:
+            print("p_ogra_mi_g")
+            print("enter the next letter")
+        elif m and n:
+            print("p_ogr_mmin_")
+            print("enter the next letter")
+        elif g and m:
+            print("p_ogr_mmi_g")
+            print("enter the next letter")
+        elif g and n:
+            print("p_ogr__ming")
+            print("enter the next letter")
+        elif r:
+            print("progr__mi__")
+            print("enter the next letter")
+        elif a:
+            print("p_ogra_mi__")
+            print("enter the next letter")
+        elif m:
+            print("p_ogr_mmi__")
+            print("enter the next letter")
+        elif n:
+            print("p_ogr__min_")
+            print("enter the next letter")
+        elif g:
+            print("p_ogr__mi_g")
+            print("enter the next letter")
+    else:
+        print("you lost")
+        print('''========
+ +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''')
+
+
+    
+    
+        
