@@ -70,7 +70,7 @@ while i:
         print(lst[0],"YOU WON")
         break
     elif " " not in lst:
-        print("TIE")
+        print("TIE ")
     
         
 
