@@ -1,4 +1,4 @@
-n=input("enter the level easy,medium or hard ")
+n=input("enter the level easy,medium or hard "
 if n=="easy":
     word="box"
     target="_ox"
